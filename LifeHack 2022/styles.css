@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    }
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+li, a {
+    font-weight: 700;
+    font-size: 26px;
+    /* text-decoration: underline; */
+    color: #37382f
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+}
+    
+.nav__links li {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    margin: 0rem 2rem;
+    border: 3px #37382f solid;
+    border-radius: 0.75rem;
+    box-shadow: 2px 2px #000;
+}
+    
+.nav__links li div {
+    transition: transform 200ms ease-in-out;
+}
+    
+.nav__links li div:hover {
+    transform: scale(1.05);
+}
+    
+/* Header */
+    
+.header {  
+    color: #37382f;
+    height: 1000px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+}
+    
+.header-image {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.title-text {
+    margin-top: 20%;
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 6rem;
+    text-shadow: 3px 2px #000;
+  }
+    
+body {
+    background-color: #fff;
+}
+
+.website {
+    color:white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.org {
+    display: flex;
+    flex-direction: row;
+}
+
+.org_picture {
+    width: 40%;
+}
+
+.org_text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Carousel */
+.slideshow-image {
+    height: 500px;
+    width: 750px;
+    border-radius: 5%;
+}
+
+/* Body Text */
+
+.bold-text {
+    font-weight: 500;
+}
+
+/* Elderly Section */
+    
+.elderly {
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.elderly-icon {
+    height: auto;
+    width: 20%;
+    margin: 10px 0;
+}
+
+.elderly-title {
+    font-weight: 900;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.elderly-quote {
+    margin: 10px 150px 0 20px;
+    text-align: justify;
+}
+
+.elderly-text {
+    margin-top: 30px;
+    margin-right: 150px;
+    text-align: justify;
+    margin-left: 20px;
+
+}
+    
+/* Children Section */
+    
+.children {
+    background-color: #eaddca;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.child-icon {
+    height: auto;
+    width: 20%;
+    margin-left: 60px;
+}
+
+.left-carousel {
+    margin-left: 100px;
+}
+
+.children-title {
+    font-weight: 900;
+    text-decoration: underline;
+    margin-left: 60px;
+}
+
+.children-text {
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 140px;
+    text-align: justify;
+}
+
+/* Cards */
+
+.card-title {
+    font-weight: 900;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card-section {
+    border-radius: 2%;
+    margin: 50px 40px;
+    text-align: center;
+    background-color: #eaddca;
+    border: 2px dotted #964B00;
+}
+
+.card-section:hover {
+    border: 2px solid #964B00;
+}
+
+.environment-text, .animal-text, .handicap-text {
+    margin: 20px 60px 40px 60px;
+    margin: left;
+    text-align: justify;
+} 
+
+.card-icon {   
+    height: auto;
+    width: 20%;
+    margin-top: 30px;
+}
+
+/* Handicap Section */
+
+.handicap {
+    margin-left: 160px;
+}
+    
+.logo {
+    height: auto;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* Animal Section */
+    
+.animal-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.animal-logo-2 {
+    height: 200px;
+    width: 250px;
+    margin: 30px;
+}
+
+.go-to-right {
+    float: right;
+}
+
+/* Environment Section */
+.environment-text {
+    margin: 20px 60px 40px 150px;
+    text-align: justify;
+}
+
+.sticker {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 30px 20px;
+}
+
+/* CTA Section */
+
+.cta {
+    background-color: #964B00;
+    padding: 100px;
+    text-align: center;
+}
+
+.cta-text {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0 50px 50px 50px;
+    text-align: center;
+}
+
+.form-control {
+    width: 30%;
+    margin: auto;
+}
+
+.copyright {
+    margin-top: 100px;
+}
+
+.shameless {
+    font-size: smaller;
+    font-family: cursive;
+}

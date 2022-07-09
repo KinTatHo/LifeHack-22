@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends of the Community</title> 
+    <link rel="icon" href="images/favicon_1.ico">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <img class="header-image" src="images/title-volunteer.jpg" alt="header-img">
+        <h1 class="title-text">Volunteering made easy!</h1>
+        <nav>
+            <ul class="nav__links">
+                <li><div onclick="scrollToElderly()">Elderly</div></li>
+                <li><div onclick="scrollToChildren()">Children</div></li>
+                <li><div onclick="scrollToHandicap()">Handicap</div></li>
+                <li><div onclick="scrollToEnvironment()">Environment</div></li>
+                <li><div onclick="scrollToPet()">Animals</div></li>
+            </ul>
+        </nav>
+        <h2></h2>
+    </div> 
+
+    <!--Elderly Organization -->
+    <div class="elderly row">
+        <div class="elderly_marking"></div>
+        <div class="col-lg-6">
+        <h1 class="elderly-title">Elderly</h1>
+        <img class="elderly-icon" src="images/elderly.png" alt="elderly icons"></a>
+        <br>
+          <img class="sticker leo" src="images/leo.jpg">
+        <br>
+        <p class="elderly-quote"> "Too often we underestimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around." <br>- Leo Buscaglia</p>
+        <p class="elderly-text bold-text">Currently, 17.6 per cent of the population here are aged 65 and above. By 2030, it will spike to about 25 per cent with more than 900,000 senior citizens. Already, there are almost 70,000 seniors who are unable to perform or who have difficulty performing one basic activity, such as self-care.</p>
+    </div>
+        <div class="col-lg-5">
+            <div id="elderlyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#elderlyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#elderlyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#elderlyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#elderlyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="slideshow-image" src="images/elderly1.jpg" class="d-block w-100" alt="test">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>TOUCH Community Services</h5>
+                      <p>How you can help: Preparing of meals, Befriending the elderly</p>
+                      <p><a class="website" href="https://www.touch.org.sg/" target="_blank">https://www.touch.org.sg/ </a></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="slideshow-image" src="images/elderly2.jpg" class="d-block w-100" alt="test2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>HCA Hospice Care</h5>
+                      <p>How you can help: Keeping the elderly company, Maintaining of the hospice, Giving haircuts, Conducting exercise sessions</p>
+                      <p><a class="website" href="https://www.hca.org.sg/Volunteer" target="_blank">https://www.hca.org.sg/Volunteer </a></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="slideshow-image" src="images/elderly3.jpg" class="d-block w-100" alt="test3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Habitat for Humanity Singapore</h5>
+                        <p>How you can help: Clear out expired food and items that pose as fire hazards</p>
+                        <p><a class="website" href="https://www.habitat.org.sg/" target="_blank">https://www.habitat.org.sg/ </a></p>
+                      </div>
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img class="slideshow-image" src="images/elderly4.jpg" class="d-block w-100" alt="test3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fei Yue Family Service Centre</h5>
+                        <p>How you can help: Declutter homes, Prepare food, Befriending through calls, Home visits or outings</p>
+                        <p><a class="website" href="https://www.fycs.org/" target="_blank">https://www.fycs.org/</a></p>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#elderlyCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#elderlyCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </div>
+
+    <!-- Children Organization -->
+    <div class="children row">
+        <div class="children_marking"></div>
+        <div class="col-lg-5 left-carousel">
+            <div id="childrenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#childrenCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#childrenCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#childrenCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#childrenCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#childrenCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="slideshow-image" src="images/child2.jpg" class="d-block w-100" alt="test">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Children’s Wishing Well</h5>
+                    <p>How you can help: Tutoring, Reading club, Counseling, Ad-hoc</p>
+                    <p><a class="website" href="https://www.wishingwell.org.sg/volunteer/" target="_blank">https://www.wishingwell.org.sg/volunteer/</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slideshow-image" src="images/child1.jpg" class="d-block w-100" alt="test2">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Make-A-Wish Singapore</h5>
+                    <p>How you can help: Wish granter, Office volunteer, Events volunteer, Skill-based volunteer</p>
+                    <p><a class="website" href="https://www.makeawish.org.sg/support#volunteer" target="_blank">https://www.makeawish.org.sg/support#volunteer</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slideshow-image" src="images/child4.jpg" class="d-block w-100" alt="test3">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Beyond Social Service</h5>
+                    <p>How you can help: Facilitate activities for children, Share a skill or hobby, Host an event, Listen to and help guide youths</p>
+                    <p><a class="website" href="https://www.beyond.org.sg/volunteer/" target="_blank">https://www.beyond.org.sg/volunteer/</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slideshow-image" src="images/child5.jpg" class="d-block w-100" alt="test3">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Club Rainbow (Singapore)</h5>
+                    <p>How you can help: Volunteer tutor, Camp befriender, Camp committee, Event support, Skill-based volunteer</p>
+                    <p><a class="website" href="https://www.clubrainbow.org/volunteer-with-us" target="_blank">https://www.clubrainbow.org/volunteer-with-us</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slideshow-image" src="images/child6.jpg" class="d-block w-100" alt="test3">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Children Society</h5>
+                    <p>How you can help: Befriender, Volunteer tutor</p>
+                    <p><a class="website" href="https://www.childrensociety.org.sg/volunteer-vacancies" target="_blank">https://www.childrensociety.org.sg/volunteer-vacancies</a></p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#childrenCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#childrenCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+        <h1 class="children-title">Children</h1>
+        <img class="child-icon" src="images/children.png" alt="child-img">
+        <p class="children-text">“If kids come to us from strong, healthy, functioning families, it makes our job easier. If they do not come to us from strong, healthy, functioning families, it makes our job more important.” <br>
+          - Barbara Colorose</p> 
+        <br>
+        <p class="children-text bold-text"> Many factors contributes to a child's development. It is crucial that we provide a child with a conducive environment for them to grow and nuture. Many children in Singapore may be less fortunate and struggle to cope with their early education days. This is where you can step in and volunteer your time and effort through various ways and be play a part in the positive change in the child's life. Here are some organizations you can consider! </p>
+    </div>
+    </div>
+
+    <!-- 3 Split Groups -->
+
+    <div class="row">
+
+    <!-- Handicap Organization-->
+    <div class="handicap col-lg-3 card-section">
+        <div class="handicap_marking"></div>
+        <img class="card-icon" src="images/love.png" alt="handicap-img">
+        <h1 class="handicap-title card-title">Handicapped</h1>
+        <a href="https://www.dpa.org.sg/how-you-can-help/be-a-volunteer/"target="_blank"><img class="logo" src="images/handicap1.png" alt="handicap1-logo"></a>
+        <a href="https://www.minds.org.sg/volunteer/"target="_blank"><img class="logo" src="images/handicap3.png" alt="handicap3-logo"></a>
+        <a href="https://www.spd.org.sg/get-involved/volunteer-with-us/"target="_blank"><img class="logo" src="images/handicap5.png" alt="handicap5-logo"></a>
+        <br>
+        <div>
+            <p class="handicap-text">“I don't want to live in the kind of world where we don't look out for each other. Not just the people that are close to us, but anybody who needs a helping hand. I cant change the way anybody else thinks, or what they choose to do, but I can do my bit.” <br>
+              - Charles de Lint </p>
+        </div>
+          </div>
+
+    <!-- Environment Organization -->
+    <div class="environment col-lg-3 card-section">
+        <div class="environment_marking"></div>
+        <img class="card-icon" src="images/planet-earth.png" alt="planet-img">
+        <h1 class="environment-title card-title">Environment</h1>
+        <a href="https://www.wws.org.sg/volunteer/"target="_blank"><img class="logo" src="images/enviro2.png" alt="enviro2-logo"></a>
+        <a href="http://www.zerowastesg.com/volunteer/"target="_blank"><img class="logo" src="images/enviro3.png" alt="enviro3-logo"></a>
+        <br>  
+            <img class="sticker" src="images/greta.jpg">
+            <p class="environment-text">"Right here, right now is where we draw the line" The world is waking up. And change is coming whether you like it or not."<br>- Greta Thunberg </p>
+        </div>
+
+    <!-- Animal-->
+    <div class="animal col-lg-3 card-section">
+        <div class="animal_marking"></div>
+        <img class="card-icon" src="images/turtle.png" alt="turtle-img">
+        <h1 class="animal-title card-title">Animals</h1>
+        <a href="https://acres.org.sg/volunteer/volunteer-with-us/#"target="_blank"><img class="animal-logo" src="images/animals3.png" alt="animals3-logo"></a>
+        <a href="https://www.animalloversleague.com/volunteer"target="_blank"><img class="animal-logo" src="images/animals1.png" alt="animals1-logo"></a>
+        <a href="https://www.causesforanimals.com/"target="_blank"><img class="animal-logo-2" src="images/animals2.png" alt="animals2-logo"></a>
+        <br>
+          <img class="sticker" src="images/steveirwin.jpg">
+            <p class="animal-text">“We don’t own the planet Earth, we belong to it. And we must share it with our wildlife." <br>
+              - Steve Irwin </p>
+
+        </div>
+    </div>
+
+<!-- Call To Action -->
+
+<div class="cta">
+  <p class="cta-text">Do drop your email if you want updates of any new volunteering opportunities! </p>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+  </form>
+  
+    <div class="footer">  
+      <h6 class="copyright">Team Trying Our Best © 2022</h6>
+      <h6 class="shameless">Proudly done by: <br>Clifton, Edmund, Kin Tat and Zhi Yong(NTU)</h6>
+    
+  </form>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+
+</script> 
+</body>
+</html>
